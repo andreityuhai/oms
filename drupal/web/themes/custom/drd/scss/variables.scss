@@ -1,0 +1,52 @@
+/**
+  * Main Colors
+ */
+$green: #72BF44 !default;
+$dark-green: #4FAE3E !default;
+$white: #FFFFFF !default;
+$light-grey: #EEEEEE !default;
+$medium-grey: #DFE0E1 !default;
+$grey: #C8C8C8 !default;
+$dark-grey: #505050 !default;
+$black: #000000 !default;
+
+/**
+ * Secondary Colors
+ */
+$coral: #EA5441 !default;
+$dark-coral: #DA4437 !default;
+$turquoise: #53ABAA !default;
+$dark-turquoise: #3F9898 !default;
+$purple: #7F557D !default;
+$dark-purple: #724A6C !default;
+
+/**
+ * Business Unit Colors
+ */
+$orange: #F07D23 !default;
+$pink: #E63264 !default;
+$blueberry: #2D2D64 !default;
+
+/**
+ * Graph Colors
+ */
+$turquoise-80: rgba(83, 171, 170, 0.8) !default;
+$mint: #B4DCB7 !default;
+$purple-60: rgba(114, 74, 108, 0.6) !default;
+$sky-blue: #A3E7FC !default;
+$blue: #04BBEE !default;
+$blueberry: $blueberry;
+
+/**
+ * Web Fonts
+ */
+$global-font-family: 'Roboto Condensed', sans-serif !default;
+$base-body-font-family: Verdana, 'Bitstream Vera Sans', 'DejaVu Sans', Tahoma, Geneva, Arial, Sans-serif !default;
+
+/**
+ * UiKit Overrides
+ */
+$global-color: $black;
+$global-primary-background: $green;
+$global-muted-color: $dark-grey;
+

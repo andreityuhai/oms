@@ -1,0 +1,1457 @@
+/* Discrete, reusable UI elements. */
+
+/* Secondary navigation */
+.uk-subnav {
+  margin: 0 15px 0 0;
+}
+
+.uk-subnav>*>:first-child {
+  /*color: #ffffff;*/
+  font-size: smaller;
+  text-transform: capitalize;
+}
+
+.uk-subnav>*>a:focus, .uk-subnav>*>a:hover {
+  color: #505050;
+}
+
+/* Tables */
+
+.uk-table-striped tbody tr:nth-of-type(odd), .uk-table-striped>tr:nth-of-type(odd) {
+  background: #eeeeee;
+  border-top: 1px solid #dfe0e1;
+  border-bottom: 1px solid #dfe0e1;
+}
+
+/* Buttons */
+/*.uk-button-primary {
+  background: #72bf44;
+  border: none;
+  color: #ffffff;
+}*/
+.uk-button-primary:focus, .uk-button-primary:hover {
+  background: #4fae3e;
+}
+
+/* Chosen */
+
+select.webform-chosen + .chosen-container.chosen-container-single .chosen-single {
+  display: block;
+  width: 100%;
+  height: 28px;
+  padding: 3px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  background-image:none;
+  box-shadow: none;
+}
+
+select.webform-chosen + .chosen-container.chosen-container-single .chosen-single div {
+  top:4px;
+  color:#000;
+}
+
+select.webform-chosen + .chosen-container .chosen-drop {
+  background-color: #FFF;
+  border: 1px solid #CCC;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0;
+  background-clip: padding-box;
+  margin: 2px 0 0;
+
+}
+
+select.webform-chosen + .chosen-container .chosen-search input[type=text] {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555;
+  vertical-align: middle;
+  background-color: #FFF;
+  border: 1px solid #CCC;
+  border-radius: 0;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  background-image:none;
+}
+
+select.webform-chosen + .chosen-container .chosen-results {
+  margin: 2px 0 0;
+  padding: 5px 0;
+  font-size: 14px;
+  list-style: none;
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+
+select.webform-chosen + .chosen-container .chosen-results li ,
+select.webform-chosen + .chosen-container .chosen-results li.active-result {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.428571429;
+  color: #333;
+  white-space: nowrap;
+  background-image:none;
+}
+select.webform-chosen + .chosen-container .chosen-results li:hover,
+select.webform-chosen + .chosen-container .chosen-results li.active-result:hover,
+select.webform-chosen + .chosen-container .chosen-results li.highlighted
+{
+  color: #FFF;
+  text-decoration: none;
+  background-color: #4fae3e;
+  background-image:none;
+}
+
+select.webform-chosen + .chosen-container-multi .chosen-choices {
+  display: block;
+  width: 100%;
+  min-height: 34px;
+  padding: 6px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555;
+  vertical-align: middle;
+  background-color: #FFF;
+  border: 1px solid #CCC;
+  border-radius: 0;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  background-image:none;
+}
+
+select.webform-chosen + .chosen-container-multi .chosen-choices li.search-field input[type="text"] {
+  height:auto;
+  padding:5px 0;
+}
+
+select.webform-chosen + .chosen-container-multi .chosen-choices li.search-choice {
+  background-image: none;
+  padding: 3px 24px 3px 5px;
+  margin: 0 6px 0 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  color: #333;
+  background-color: #FFF;
+  border-color: #CCC;
+}
+
+select.webform-chosen + .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+  top:8px;
+  right:6px;
+}
+
+select.webform-chosen + .chosen-container-multi.chosen-container-active .chosen-choices,
+select.webform-chosen + .chosen-container.chosen-container-single.chosen-container-active .chosen-single,
+select.webform-chosen + .chosen-container .chosen-search input[type=text]:focus{
+  border-color: #72bf44;
+  outline: 0;
+  box-shadow: none;
+  /*-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),0 0 8px rgba(114, 191, 68, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),0 0 8px rgba(114, 191, 68, 0.6);*/
+}
+
+select.webform-chosen + .chosen-container-multi .chosen-results li.result-selected{
+  display: list-item;
+  color: #ccc;
+  cursor: default;
+  background-color: white;
+}
+
+/* Select2 */
+.select2-container--default:focus {
+  outline: none;
+  border-color: #4fae3e;
+}
+
+.select2-container--default .select2-selection {
+  border-color: #e5e5e5;
+  border-radius: 0;
+}
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+  border-color: #4fae3e;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  border-radius: 0;
+  background-color: #72bf44;
+  border: none;
+  color: #ffffff;
+  line-height: 30px;
+  margin: 8px 8px 1px 3px;
+  padding: 2px 10px 2px 10px;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 5px;
+  font-size: 20px;
+  vertical-align: top;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
+  color: #f0506e;
+}
+.select2-container--default .select2-selection:focus {
+  outline: none;
+}
+.select2-dropdown {
+  border-color: #e5e5e5;
+  border-radius: 0;
+}
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  border-color: #e5e5e5;
+}
+.select2-container--default .select2-search--dropdown .select2-search__field:focus {
+  outline: none;
+  border-color: #4fae3e;
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: #72bf44;
+}
+
+  /* Select list */
+.uk-input:focus, .uk-select:focus, .uk-textarea:focus {
+  border-color: #4fae3e;
+}
+.uk-select:not([multiple]):not([size]) {
+  height: 28px;
+}
+
+/* Input */
+.uk-input {
+  height: 28px;
+}
+
+/* Checkboxes */
+.uk-checkbox:checked, .uk-checkbox:indeterminate, .uk-radio:checked {
+  background-color: #72bf44;
+}
+.uk-checkbox:checked:focus, .uk-checkbox:indeterminate:focus, .uk-radio:checked:focus {
+  background-color: #4fae3e;
+}
+.uk-checkbox:focus, .uk-radio:focus {
+  border-color: #4fae3e;
+}
+
+.checkboxes--wrapper.condensed {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+@media (min-width: 480px) {
+  .checkboxes--wrapper.condensed legend {
+    width: 13em;
+    text-align: right;
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+@media (max-width: 479px) {
+  .checkboxes--wrapper.condensed legend {
+    display: block;
+    clear: both;
+    padding-left: 0;
+    float: none;
+  }
+}
+
+/* Radio buttons */
+.radios--wrapper.condensed {
+  border: none;
+  padding: 0;
+}
+@media (min-width: 480px) {
+  radios--wrapper.condensed {
+    margin: 0;
+  }
+  .radios--wrapper.condensed legend {
+    width: 13em;
+    text-align: right;
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+@media (max-width: 479px) {
+  .radios--wrapper.condensed legend {
+    display: block;
+    clear: both;
+    padding-left: 0;
+    float: none;
+  }
+}
+
+
+/* Forms */
+@media (min-width: 480px) {
+  .webform-options-display-two-columns div.form-item, .webform-options-display-three-columns div.form-item {
+    margin-top: 0 !important;
+  }
+}
+*+.uk-grid-margin-small, .uk-grid+.uk-grid-small, .uk-grid-small>.uk-grid-margin {
+  margin-top: 0px;
+}
+
+fieldset.form-wrapper legend {
+  font-weight: bolder;
+}
+
+.address-line2,
+.form-item-field-contact-account-form-inline-entity-form-field-account-industry-other {
+  margin-top: 10px;
+}
+
+/* Labels */
+.webform-element--title-inline > label {
+  padding-right: 0.5em;
+  margin: 0.4em 0.5em 0.4em 0;
+  font-size: 0.9em;
+}
+.webform-element--title-inline .chosen-container {
+  min-width: 15em;
+}
+@media (min-width: 480px) {
+  .webform-element--title-inline > .uk-form-controls {
+    display: inline-block;
+  }
+}
+.form-composite > .uk-legend {
+  font-weight: bolder;
+  font-size: 0.9em;
+}
+
+.uk-form-stacked .uk-form-label.uk-inline {
+  display: inline-block;
+  margin-bottom: 0;
+}
+.uk-form-label.js-form-required:after,
+.uk-legend .fieldset-legend.js-form-required:after,
+.field--widget-boolean-checkbox input[type=checkbox][required=required]:after,
+.field--widget-options-select[required=required] label:after {
+  content: ' *';
+  color: #f0506e!important;
+  top: -.5em;
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.field--widget-boolean-checkbox .js-form-item.js-form-type-checkbox label {
+  position: relative;
+}
+.field--widget-boolean-checkbox input[type=checkbox][required=required]:after {
+  position: absolute;
+  top: 8px;
+  right: -8px;
+}
+.uk-legend {
+  font-size: 1em;
+  line-height: 1;
+}
+
+@media (min-width: 480px) {
+  .webform-element--title-inline > label {
+    display: inline-block;
+    width: 13em;
+    text-align: right;
+  }
+}
+
+@media (max-width: 479px) {
+  .webform-element--title-inline > label {
+    display: block;
+  }
+}
+
+/** Form labels */
+.uk-form-label {
+  font-weight: bolder;
+}
+@media (min-width: 480px) {
+  .js-form-item .uk-form-label {
+
+  }
+}
+
+
+/* Element description */
+.webform-element-description.uk-margin {
+  margin-bottom: 0;
+  clear: both;
+}
+
+/* Flexbox */
+@media (min-width: 768px) {
+  .webform-flexbox {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+
+.uk-textarea {
+  margin-right: -7px;
+}
+
+/* Dialog */
+.ui-widget,
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+}
+.ui-dialog .ui-widget-content.ui-dialog-content {
+  -webkit-overflow-scrolling: touch;
+}
+@media (max-width: 800px) {
+  .ui-widget.ui-dialog {
+    width: 92% !important;
+  }
+}
+@media (min-width: 800px) {
+  .ui-widget.ui-dialog {
+    width: 92% !important;
+    max-width: 1100px;
+  }
+}
+.ui-widget.ui-dialog .ui-dialog-titlebar {
+  background: #72bf44;
+}
+.ui-widget.ui-dialog .ui-dialog-titlebar .ui-dialog-title {
+  font-size: 1.3em;
+  font-weight: lighter;
+}
+.ui-dialog .ui-dialog-titlebar-close {
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  opacity: 0.3;
+  transition: opacity 0.4s;
+}
+.ui-dialog .ui-dialog-titlebar-close:hover,
+.ui-dialog .ui-dialog-titlebar-close:focus {
+  outline: none;
+  opacity: 1;
+}
+.ui-button .ui-icon.ui-icon-closethick {
+  background-image: none;
+}
+.ui-icon-closethick:before, .ui-icon-closethick:after {
+  position: absolute;
+  left: 7px;
+  top: -1px;
+  content: ' ';
+  height: 18px;
+  width: 2px;
+  background-color: #ffffff;
+}
+.ui-icon-closethick:before {
+  transform: rotate(45deg);
+}
+.ui-icon-closethick:after {
+  transform: rotate(-45deg);
+}
+
+/* Opportunity form */
+.field--name-field-opportunity-account .entities-list,
+.field--name-field-opportunity-contact .entities-list,
+.field--name-field-opportunity-contact-second .entities-list {
+  margin-bottom: 0;
+  margin-top: 0 !important;
+}
+.field--name-field-opportunity-account .entities-list .rendered-entity,
+.field--name-field-opportunity-contact .entities-list .rendered-entity,
+.field--name-field-opportunity-contact-second .entities-list .rendered-entity {
+  display: block;
+  margin: 0;
+}
+.field--name-field-opportunity-account .entities-list .item-container > input,
+.field--name-field-opportunity-contact .entities-list .item-container > input,
+.field--name-field-opportunity-contact-second .entities-list .item-container > input {
+  display: inline-block;
+  margin-right: 7px;
+}
+.field--name-field-opportunity-account .account-address p.address,
+.field--name-field-opportunity-account .account-address .fieldset-wrapper > div {
+  margin-bottom: 0;
+}
+
+/* Select account / contact forms */
+.ui-dialog div[id^='field-opportunity-account-accounts-browser-dialog-'].ui-dialog-content,
+.ui-dialog div[id^='field-opportunity-contact-contacts-browser-dialog-'].ui-dialog-content,
+.ui-dialog div[id^='field-opportunity-contact-second-contacts-browser-multivalue-dialog-'].ui-dialog-content,
+.ui-dialog div[id^='field-opportunity-presales-lead-presale-lead-dialog-'].ui-dialog-content,
+.ui-dialog div[id^='field-opportunity-presales-res-presales-resources-dialog-'].ui-dialog-content,
+.ui-dialog div[id^='field-opportunity-resource-users-by-market-multivalue-dialog-'].ui-dialog-content,
+.ui-dialog div[id^='entity-id-users-browser-dialog-'].ui-dialog-content,
+.ui-dialog div[id^='field-specialist-resources-users-browser-multivalue-dialog-'].ui-dialog-content,
+.ui-dialog div[id^='field-specialist-resources-users-by-market-dialog-'].ui-dialog-content,
+.ui-dialog div[id^='field-specialist-resources-users-by-market-multivalue-dialog-'].ui-dialog-content {
+  padding: 0;
+  position: relative;
+}
+.ui-dialog div[id^='field-opportunity-account-accounts-browser-dialog-'] .ajax-progress-throbber,
+.ui-dialog div[id^='field-opportunity-contact-contacts-browser-dialog-'] .ajax-progress-throbber,
+.ui-dialog div[id^='field-opportunity-contact-second-contacts-browser-multivalue-dialog-'] .ajax-progress-throbber,
+.ui-dialog div[id^='field-opportunity-presales-lead-presale-lead-dialog-'] .ajax-progress-throbber,
+.ui-dialog div[id^='field-opportunity-presales-res-presales-resources-dialog-'] .ajax-progress-throbber,
+.ui-dialog div[id^='field-opportunity-resource-users-by-market-multivalue-dialog-'] .ajax-progress-throbber,
+.ui-dialog div[id^='entity-id-users-browser-dialog-'] .ajax-progress-throbber,
+.ui-dialog div[id^='field-specialist-resources-users-browser-multivalue-dialog-'] .ajax-progress-throbber,
+.ui-dialog div[id^='field-specialist-resources-users-by-market-dialog-'] .ajax-progress-throbber,
+.ui-dialog div[id^='field-specialist-resources-users-by-market-multivalue-dialog-'] .ajax-progress-throbber {
+  left: 49%;
+  position: absolute;
+  top: 40%;
+  z-index: 1000;
+  background-color: #232323;
+  background-image: url("/core/misc/loading-small.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 7px;
+  height: 24px;
+  opacity: 0.9;
+  padding: 4px;
+  width: 24px;
+}
+#new-contact-form .field--name-field-contact-account {
+  display: none;
+}
+.layout-container {
+  padding: .5em 1em;
+  margin-bottom: 1em;
+}
+.entity-browser-form .eb-tabs ul {
+  border-bottom: none;
+}
+.entity-browser-form .eb-tabs ul li.active {
+  border-bottom: 3px solid #72bf44;
+}
+.entity-browser-form .eb-tabs ul li.active a {
+  background-color: transparent;
+}
+.entity-browser-form .eb-tabs ul li:hover {
+  border-bottom: 3px solid #4fae3e;
+  color: #4fae3e;
+}
+.entity-browser-form .eb-tabs ul li a {
+  font-weight: bolder;
+}
+.entity-browser-form .eb-tabs ul li a:hover {
+  text-decoration: none;
+}
+
+.entity-browser-form .view {
+  margin-bottom: 20px;
+}
+.entity-browser-form .views-exposed-form {
+  padding: 0 1.5em;
+  margin: 1.5em 0;
+  background: #efefef;
+}
+.entity-browser-form .views-exposed-form .form-item-search,
+.entity-browser-form .views-exposed-form .form-item-uid,
+.entity-browser-form .views-exposed-form .form-item-name {
+  display: inline-block;
+  margin-right: 5px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.entity-browser-form .views-exposed-form .form-item-name input {
+  height: 33px;
+}
+.entity-browser-form .views-exposed-form .form-item-search input {
+  height: 33px;
+}
+.entity-browser-form .views-exposed-form .form-actions {
+  display: inline-block;
+}
+.entity-browser-form .views-exposed-form .form-actions input {
+  line-height: 33px;
+  background: #72bf44;
+  color: #ffffff;
+  font-weight: bolder;
+  border: none;
+}
+.entity-browser-form .views-exposed-form .form-actions input:hover,
+.entity-browser-form .views-exposed-form .form-actions input:focus {
+  background: #4fae3e;
+}
+
+
+.entity-browser-form [class*=uk-child-width]>* {
+  margin-bottom: 15px;
+}
+.entity-browser-form .uk-grid .views-col {
+  height: 100%;
+}
+.entity-browser-form .uk-grid li {
+  height: 100%;
+  cursor: pointer;
+}
+.entity-browser-form .uk-grid li:after {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: transparent url("/core/misc/icons/73b355/check.svg") no-repeat center center;
+  background-size: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.entity-browser-form .uk-grid li:hover {
+  background: rgba(142, 222, 142, 0.16);
+}
+
+.entity-browser-form .uk-grid li.checked {
+  background: rgba(142, 222, 142, 0.47);
+  border: 1px solid rgba(1, 97, 15, 0.67);
+}
+
+.entity-browser-form .uk-grid li.checked:after {
+  background-size: 80px 80px;
+}
+
+.entity-browser-form #edit-selected .item-container {
+  font-size: 18px;
+  font-weight: bolder;
+}
+.entity-browser-form .entity-browser-use-selected {
+  margin-right: 10px;
+  border: none;
+  background: #72bf44;
+  color: #ffffff;
+  font-weight: bolder;
+}
+.entity-browser-form .entity-browser-use-selected:hover {
+  background: #4fae3e;
+}
+
+.entity-browser-form .entities-list {
+  /*border: solid 1px #ddd;*/
+}
+.entity-browser-form .entities-list .item-container {
+  margin: 1.5em;
+}
+
+.ui-menu .ui-menu-item a {
+  background: #72bf44;
+  color: #ffffff;
+}
+.ui-menu .ui-menu-item a:hover,
+.ui-menu .ui-menu-item a:focus {
+  background: #4fae3e;
+  color: #ffffff;
+  border: none;
+  text-decoration: none;
+}
+
+/* Account form */
+input[id^='edit-field-account-annual-revenue-'],
+input[id^='edit-inline-entity-form-field-account-annual-revenue'] {
+  width: calc(100% - 1em);
+}
+.form-item-field-account-industry-other input,
+.form-item-inline-entity-form-field-account-industry-other input {
+  margin-top: 5px;
+}
+.form-item-field-account-market-target-id {
+  display: inline-block;
+  margin-right: 5px;
+}
+.form-item-field-account-market-target-id select {
+  height: 33px !important;
+}
+
+
+
+/* Applications */
+.field--name-field-opportunity-applications .fieldset-wrapper .field-multiple-table thead,
+.field--name-field-opportunity-applications .fieldset-wrapper .tabledrag-toggle-weight-wrapper {
+  display: none;
+}
+.paragraph-type--opportunity-application .form-wrapper {
+  margin-bottom: 0;
+  margin-top: 5px !important;
+}
+.paragraph-type--opportunity-application .form-wrapper .paragraph-summary {
+  margin-top: 0 !important;
+}
+.paragraph-type--opportunity-application .form-wrapper .paragraphs-collapsed-description::after {
+  background: none;
+}
+.paragraph-type--opportunity-application .paragraph--view-mode--preview > div {
+  /*display: inline-block;
+  margin-right: 10px;*/
+}
+.paragraph-type--opportunity-application .form-item[class*="field-opportunity-applications-"] {
+  display: inline-block;
+}
+.paragraph-type--opportunity-application .form-item[class*="subform-field-application-type-other"] {
+  display: inline-block;
+  margin-top: 5px;
+}
+@media (min-width: 720px) {
+  .paragraph-type--opportunity-application .paragraphs-subform .form-item label {
+    display: inline-block;
+    width: 5em;
+    text-align: right;
+    margin-right: 5px;
+  }
+  .paragraph-type--opportunity-application .paragraphs-subform .form-item .uk-form-controls {
+    display: inline-block;
+  }
+  .paragraph-type--opportunity-application .paragraphs-subform .form-item .uk-form-icon-flip~.uk-input {
+    padding-right: 10px !important;
+  }
+  .paragraph-type--opportunity-application .form-item[class*="subform-field-application-type-other"] {
+    width: 23.85em;
+  }
+}
+.paragraph-type--opportunity-application .paragraphs-dropdown-actions {
+  border-radius: 0;
+}
+.paragraph-type--opportunity-application .paragraphs-dropdown-actions .button {
+  font-weight: normal;
+}
+.paragraph-type--opportunity-application .paragraphs-dropdown-actions .button:hover {
+  background: #eeeeee;
+}
+.paragraph-type--opportunity-application .paragraphs-dropdown-actions .button.uk-button-danger {
+  color: #000000;
+}
+
+/* paragraphs */
+.js .paragraph-type-title {
+  flex-basis: 0;
+  min-width: 0;
+}
+.field--type-entity-reference-revisions[required=required] [id*="edit-field-opportunity-"] > strong:after,
+.field--type-entity-reference-revisions[required=required] [id*="edit-field-opportunity-"] > legend > .fieldset-legend:after{
+  content: ' *';
+  color: #f0506e;
+}
+#edit-field-opportunity-proship,
+[id*="edit-field-opportunity-proship--"],
+#edit-field-opportunity-oms200,
+[id*="edit-field-opportunity-oms200--"],
+#edit-field-opportunity-ecertify,
+[id*="edit-field-opportunity-ecertify--"],
+#edit-field-opportunity-inserter,
+[id*="edit-field-opportunity-inserter--"],
+#edit-field-opportunity-wts,
+[id*="edit-field-opportunity-wts--"],
+#edit-field-opportunity-neotouch,
+[id*="edit-field-opportunity-neotouch--"] {
+  border: 1px solid #ddd;
+  margin: 15px 0;
+  padding: 25px 15px;
+  position: relative;
+}
+#edit-field-opportunity-proship > strong,
+[id*="edit-field-opportunity-proship--"] > strong,
+#edit-field-opportunity-oms200 > strong,
+[id*="edit-field-opportunity-oms200--"] > strong,
+#edit-field-opportunity-ecertify > strong,
+[id*="edit-field-opportunity-ecertify--"] > strong,
+#edit-field-opportunity-inserter > strong,
+[id*="edit-field-opportunity-inserter--"] > strong,
+#edit-field-opportunity-wts > strong,
+[id*="edit-field-opportunity-wts--"] > strong,
+#edit-field-opportunity-neotouch > strong,
+[id*="edit-field-opportunity-neotouch--"] > strong {
+  position: absolute;
+  top: -0.8em;
+  background: #ffffff;
+  padding: 0 10px;
+  font-size: 0.9em;
+}
+#edit-field-opportunity-proship-text,
+[id*="edit-field-opportunity-proship-text--"],
+#edit-field-opportunity-oms200-text,
+[id*="edit-field-opportunity-oms200-text--"],
+#edit-field-opportunity-ecertify-text,
+[id*="edit-field-opportunity-ecertify-text--"],
+#edit-field-opportunity-inserter-text,
+[id*="edit-field-opportunity-inserter-text--"],
+#edit-field-opportunity-wts-text,
+[id*="edit-field-opportunity-wts-text--"],
+#edit-field-opportunity-neotouch-text,
+[id*="edit-field-opportunity-neotouch-text--"] {
+  display: none;
+}
+
+/* Opportunity details */
+.field--name-field-opportunity-value .uk-form-controls input {
+  width: calc(100% - 12px);
+}
+.field--name-field-opportunity-probability .uk-form-controls input {
+  width: calc(100% - 1em);
+}
+
+
+.field--name-field-opportunity-comm-volume,
+.field--name-field-opportunity-inbound,
+.field--name-field-opportunity-outbound,
+.field--name-field-opportunity-document,
+.field--name-field-opportunity-cost-per-piece,
+.field--name-field-opportunity-postage-rate,
+.field--name-field-opportunity-dso,
+.field--name-field-opportunity-invoice-avrg {
+  margin-top: 5px !important;
+  margin-bottom: 0;
+}
+.print-volume > label {
+  display: block;
+  width: 100%;
+  font-weight: bolder;
+  color: #333;
+}
+.field--name-field-opportunity-envelope-vol,
+.field--name-field-opportunity-pages-per-env {
+  margin: 0 0 5px 0 !important;
+}
+
+@media (max-width: 599px) {
+  .field--name-field-opportunity-envelope-vol,
+  .field--name-field-opportunity-pages-per-env {
+    width: 100%;
+  }
+}
+@media (min-width: 600px) {
+  .field--name-field-opportunity-comm-volume .form-item label,
+  .field--name-field-opportunity-inbound .form-item label,
+  .field--name-field-opportunity-outbound .form-item label,
+  .field--name-field-opportunity-document .form-item label,
+  .field--name-field-opportunity-cost-per-piece .form-item label,
+  .field--name-field-opportunity-postage-rate .form-item label,
+  .field--name-field-opportunity-dso .form-item label,
+  .field--name-field-opportunity-invoice-avrg .form-item label {
+    display: inline-block;
+    width: 15em;
+    text-align: right;
+    margin-right: 5px;
+  }
+  .field--name-field-opportunity-comm-volume .form-item .uk-form-controls,
+  .field--name-field-opportunity-inbound .form-item .uk-form-controls,
+  .field--name-field-opportunity-outbound .form-item .uk-form-controls,
+  .field--name-field-opportunity-document .form-item .uk-form-controls,
+  .field--name-field-opportunity-cost-per-piece .form-item .uk-form-controls,
+  .field--name-field-opportunity-postage-rate .form-item .uk-form-controls,
+  .field--name-field-opportunity-dso .form-item .uk-form-controls,
+  .field--name-field-opportunity-invoice-avrg .form-item .uk-form-controls,
+  .field--name-field-opportunity-probability .form-item .uk-form-controls {
+    display: inline-block;
+    width: 18.4em;
+  }
+  .field--name-field-opportunity-cost-per-piece .field-description,
+  .field--name-field-opportunity-comm-volume .field-description {
+    width: 15em;
+    text-align: right;
+    margin-right: 5px;
+    margin-top: -7px !important;
+    margin-bottom: 0;
+  }
+  .field--name-field-opportunity-envelope-vol {
+    margin: 0 !important;
+    padding-left: 4px;
+  }
+  .field--name-field-opportunity-pages-per-env {
+    margin: 0 !important;
+  }
+  .field--name-field-opportunity-envelope-vol .form-item > label,
+  .field--name-field-opportunity-pages-per-env .form-item > label {
+    margin-bottom: 0;
+    font-weight: lighter;
+  }
+  .print-volume {
+    margin-top: 5px !important;
+  }
+  .print-volume > label {
+    display: inline-block;
+    width: 15em;
+    text-align: right;
+    margin-right: 5px;
+    font-size: .875rem;
+    font-weight: bolder;
+    color: #333;
+    padding-top: 24px;
+  }
+}
+
+/* New account form */
+@media (min-width: 600px) {
+  .entity-browser-accounts-browser-form [id*="edit-inline-entity-form"] .field--name-title .uk-form-label,
+  .entity-browser-accounts-browser-form [id*="edit-inline-entity-form"] .field--name-field-account-market .uk-form-label,
+  .entity-browser-accounts-browser-form [id*="edit-inline-entity-form"] .field--name-field-account-industry .uk-form-label,
+  .entity-browser-accounts-browser-form [id*="edit-inline-entity-form"] .field--name-field-account-annual-revenue .uk-form-label,
+  .entity-browser-accounts-browser-form [id*="edit-inline-entity-form"] .field--name-field-account-customers-num .uk-form-label,
+  .entity-browser-accounts-browser-form [id*="edit-inline-entity-form"] .field--name-field-account-website .uk-form-label {
+    display: inline-block;
+    width: 13em;
+    text-align: right;
+    margin-right: 5px;
+  }
+  .entity-browser-accounts-browser-form [id*="edit-inline-entity-form"] .field--name-title .uk-form-controls,
+  .entity-browser-accounts-browser-form [id*="edit-inline-entity-form"] .field--name-field-account-market .uk-form-controls,
+  .entity-browser-accounts-browser-form [id*="edit-inline-entity-form"] .field--name-field-account-industry .uk-form-controls,
+  .entity-browser-accounts-browser-form [id*="edit-inline-entity-form"] .field--name-field-account-annual-revenue .uk-form-controls,
+  .entity-browser-accounts-browser-form [id*="edit-inline-entity-form"] .field--name-field-account-customers-num .uk-form-controls,
+  .entity-browser-accounts-browser-form [id*="edit-inline-entity-form"] .field--name-field-account-website .uk-form-controls {
+    display: inline-block;
+    width: 18.4em;
+  }
+  .entity-browser-accounts-browser-form [id*="edit-inline-entity-form"] .field-description {
+    margin-left: 14.3em;
+    margin-top: 0 !important;
+    font-size: smaller;
+  }
+}
+
+.field--name-field-opportunity-probability .uk-form-controls input {
+  width: calc(100% - 1em);
+}
+
+
+.field--name-field-opportunity-comm-volume,
+.field--name-field-opportunity-inbound,
+.field--name-field-opportunity-outbound,
+.field--name-field-opportunity-document,
+.field--name-field-opportunity-cost-per-piece,
+.field--name-field-opportunity-postage-rate,
+.field--name-field-opportunity-dso,
+.field--name-field-opportunity-invoice-avrg {
+  margin-top: 5px !important;
+  margin-bottom: 0;
+}
+.print-volume > label {
+  display: block;
+  width: 100%;
+  font-weight: bolder;
+  color: #333;
+}
+.field--name-field-opportunity-envelope-vol,
+.field--name-field-opportunity-pages-per-env {
+  margin: 0 0 5px 0 !important;
+}
+
+@media (max-width: 599px) {
+  .field--name-field-opportunity-envelope-vol,
+  .field--name-field-opportunity-pages-per-env {
+    width: 100%;
+  }
+}
+@media (min-width: 600px) {
+  .field--name-field-opportunity-comm-volume .form-item label,
+  .field--name-field-opportunity-inbound .form-item label,
+  .field--name-field-opportunity-outbound .form-item label,
+  .field--name-field-opportunity-document .form-item label,
+  .field--name-field-opportunity-cost-per-piece .form-item label,
+  .field--name-field-opportunity-postage-rate .form-item label,
+  .field--name-field-opportunity-dso .form-item label,
+  .field--name-field-opportunity-invoice-avrg .form-item label {
+    display: inline-block;
+    width: 15em;
+    text-align: right;
+    margin-right: 5px;
+  }
+  .field--name-field-opportunity-comm-volume .form-item .uk-form-controls,
+  .field--name-field-opportunity-inbound .form-item .uk-form-controls,
+  .field--name-field-opportunity-outbound .form-item .uk-form-controls,
+  .field--name-field-opportunity-document .form-item .uk-form-controls,
+  .field--name-field-opportunity-cost-per-piece .form-item .uk-form-controls,
+  .field--name-field-opportunity-postage-rate .form-item .uk-form-controls,
+  .field--name-field-opportunity-dso .form-item .uk-form-controls,
+  .field--name-field-opportunity-invoice-avrg .form-item .uk-form-controls,
+  .field--name-field-opportunity-probability .form-item .uk-form-controls {
+    display: inline-block;
+    width: 18.4em;
+  }
+  .field--name-field-opportunity-cost-per-piece .field-description,
+  .field--name-field-opportunity-comm-volume .field-description {
+    width: 15em;
+    text-align: right;
+    margin-right: 5px;
+    margin-top: -7px !important;
+    margin-bottom: 0;
+  }
+  .field--name-field-opportunity-envelope-vol {
+    margin: 0 !important;
+    padding-left: 4px;
+  }
+  .field--name-field-opportunity-pages-per-env {
+    margin: 0 !important;
+  }
+  .field--name-field-opportunity-envelope-vol .form-item > label,
+  .field--name-field-opportunity-pages-per-env .form-item > label {
+    margin-bottom: 0;
+    font-weight: lighter;
+  }
+  .print-volume {
+    margin-top: 5px !important;
+  }
+  .print-volume > label {
+    display: inline-block;
+    width: 15em;
+    text-align: right;
+    margin-right: 5px;
+    font-size: .875rem;
+    font-weight: bolder;
+    color: #333;
+    padding-top: 24px;
+  }
+}
+
+/* Presales lead / resources / Users / secondary contacts */
+.field--name-field-opportunity-contact .entities-list,
+.field--name-field-specialist-resources .entities-list,
+.field--name-field-opportunity-presales-lead .entities-list,
+.field--name-field-opportunity-presales-res .entities-list,
+.field--name-field-opportunity-contact-second .entities-list,
+.field--name-field-opportunity-resource .entities-list {
+  margin: 0 -10px !important;
+  overflow: hidden;
+}
+.field--name-field-opportunity-contact .entities-list .rendered-entity,
+.field--name-field-specialist-resources .entities-list .rendered-entity,
+.field--name-field-opportunity-presales-lead .entities-list .rendered-entity,
+.field--name-field-opportunity-presales-res .entities-list .rendered-entity,
+.field--name-field-opportunity-contact-second .entities-list .rendered-entity,
+.field--name-field-opportunity-resource .entities-list .rendered-entity {
+  display: block;
+  padding: 15px;
+  border: solid 1px #eeeeee;
+
+}
+.field--name-field-opportunity-contact .entities-list .rendered-entity input,
+.field--name-field-specialist-resources .entities-list .rendered-entity input,
+.field--name-field-opportunity-presales-lead .entities-list .rendered-entity input,
+.field--name-field-opportunity-presales-res .entities-list .rendered-entity input,
+.field--name-field-opportunity-contact-second .entities-list .rendered-entity input,
+.field--name-entity-id .entities-list .rendered-entity input,
+.field--name-field-opportunity-resource .entities-list .rendered-entity input {
+  margin: 10px 0 0 0;
+}
+@media (min-width: 600px) {
+  .field--name-field-opportunity-contact .entities-list .rendered-entity,
+  .field--name-field-specialist-resources .entities-list .rendered-entity,
+  .field--name-field-opportunity-presales-lead .entities-list .rendered-entity,
+  .field--name-field-opportunity-presales-res .entities-list .rendered-entity,
+  .field--name-field-opportunity-contact-second .entities-list .rendered-entity,
+  .field--name-field-opportunity-resource .entities-list .rendered-entity {
+    margin: 10px !important;
+    width: 237px;
+    height: 200px;
+    float: left;
+  }
+  .field--name-field-opportunity-contact .entities-list .rendered-entity > div,
+  .field--name-field-specialist-resources .entities-list .rendered-entity > div,
+  .field--name-field-opportunity-presales-lead .entities-list .rendered-entity > div,
+  .field--name-field-opportunity-presales-res .entities-list .rendered-entity > div,
+  .field--name-field-opportunity-contact-second .entities-list .rendered-entity > div,
+  .field--name-field-opportunity-resource .entities-list .rendered-entity > div {
+    height: 150px;
+    overflow: hidden;
+  }
+}
+
+/* Horizontal tabs */
+.horizontal-tabs {
+  border-color: #dddddd;
+}
+.horizontal-tabs .horizontal-tabs-list {
+  background-color: transparent;
+  padding: 0.5em 1em 0;
+  border: none;
+  box-sizing: border-box;
+}
+.horizontal-tabs .horizontal-tab-button {
+  background: transparent;
+  border: none;
+}
+.horizontal-tabs .horizontal-tab-button a:hover {
+  background: transparent;
+}
+.horizontal-tabs .horizontal-tab-button:hover {
+  border-bottom: 3px solid #4fae3e;
+}
+.horizontal-tab-button.selected {
+  border-bottom: 3px solid #72bf44;
+}
+.horizontal-tabs ul.horizontal-tabs-list li a,
+.horizontal-tabs ul.horizontal-tabs-list li.selected a {
+  padding: .5em 1.5em;
+}
+
+/* Date field */
+.field--widget-datetime-default h4 {
+  font-size: .875rem;
+  margin-bottom: 5px;
+}
+.field--widget-single-date-time-widget input {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  height: 28px;
+  padding: 0 10px;
+  color: #666;
+  border: 1px solid #e5e5e5;
+  transition: .2s ease-in-out;
+  transition-property: color,background-color,border;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.xdsoft_datetimepicker {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #666;
+}
+.xdsoft_datetimepicker .xdsoft_label {
+  font-weight: bolder;
+}
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default,
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box>div>div.xdsoft_current {
+  background: #72bf44;
+  box-shadow: #4fae3e 0 1px 3px 0 inset;
+  font-weight: bolder;
+}
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_today {
+  color: #4fae3e;
+  font-weight: bolder;
+}
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_today.xdsoft_current {
+  color: #ffffff;
+}
+.xdsoft_datetimepicker .xdsoft_calendar td:hover,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box>div>div:hover {
+  background-color: #4fae3e !important;
+}
+.xdsoft_datetimepicker .xdsoft_label>.xdsoft_select>div>.xdsoft_option.xdsoft_current {
+  background: #72bf44;
+  box-shadow: #4fae3e 0 1px 3px 0 inset;
+}
+.xdsoft_datetimepicker .xdsoft_label>.xdsoft_select>div>.xdsoft_option:hover {
+  background-color: #4fae3e;
+}
+
+/** Products **/
+#edit-field-group-products-wrapper > fieldset,
+#field-opportunity-products > fieldset {
+  display: block;
+}
+#edit-field-group-products-wrapper .term-reference-tree,
+#field-opportunity-products .term-reference-tree {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+#edit-field-group-products-wrapper .term-reference-tree .no-term-reference-tree-button,
+#field-opportunity-products .term-reference-tree .no-term-reference-tree-button {
+  display: none;
+}
+#edit-field-group-products-wrapper .term-reference-tree .term-reference-tree-button,
+#field-opportunity-products .term-reference-tree .term-reference-tree-button {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  display: block;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+#edit-field-group-products-wrapper .term-reference-tree > .term-reference-tree-level > li,
+#field-opportunity-products .term-reference-tree > .term-reference-tree-level > li {
+  position: relative;
+}
+#edit-field-group-products-wrapper .term-reference-tree > .term-reference-tree-level > li > .form-item > label.uk-first-column,
+#field-opportunity-products .term-reference-tree > .term-reference-tree-level > li > .form-item > label.uk-first-column {
+  padding-left: 25px;
+}
+#edit-field-group-products-wrapper .term-reference-tree > .term-reference-tree-level > li label,
+#field-opportunity-products .term-reference-tree > .term-reference-tree-level > li label {
+  padding-left: 0;
+}
+#edit-field-group-products-wrapper .term-reference-tree > .term-reference-tree-level > li > .form-item > label.uk-first-column input,
+#field-opportunity-products .term-reference-tree > .term-reference-tree-level > li > .form-item > label.uk-first-column input {
+  display: none;
+}
+p[id*="edit-field-opportunity-oms200-0-subform-field-i-have-read-the-minimum-sy-value--"] {
+  width: 100%;
+}
+
+/** Opportunities list */
+#views-exposed-form-opportunities-block-1,
+#views-exposed-form-opportunities-block-2,
+#views-exposed-form-my-opportunities-block-1 {
+  margin-bottom: 1.5em;
+  padding: 1em 1.5em 1.5em;
+  background: #efefef;
+}
+#views-exposed-form-opportunities-block-1 .form-item,
+#views-exposed-form-opportunities-block-2 .form-item,
+#views-exposed-form-my-opportunities-block-1 .form-item {
+  display: inline-block;
+}
+#views-exposed-form-opportunities-block-1 .form-item input,
+#views-exposed-form-opportunities-block-2 .form-item input,
+#views-exposed-form-my-opportunities-block-1 .form-item input {
+  height: 33px;
+}
+#views-exposed-form-opportunities-block-1 .form-item .uk-select:not([multiple]):not([size]),
+#views-exposed-form-opportunities-block-2 .form-item .uk-select:not([multiple]):not([size]),
+#views-exposed-form-my-opportunities-block-1 .form-item .uk-select:not([multiple]):not([size]){
+  height: 33px;
+}
+#views-exposed-form-opportunities-block-1 .form-actions,
+#views-exposed-form-opportunities-block-2 .form-actions,
+#views-exposed-form-my-opportunities-block-1 .form-actions {
+  display: inline-block;
+  margin: 0 !important;
+}
+#views-exposed-form-opportunities-block-1 [id^='edit-submit-opportunities'],
+#views-exposed-form-opportunities-block-2 [id^='edit-submit-opportunities'],
+#views-exposed-form-my-opportunities-block-1 #edit-submit-my-opportunities {
+  line-height: 33px;
+  background: #72bf44;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+}
+#views-exposed-form-opportunities-block-1 [id^='edit-submit-opportunities']:hover,
+#views-exposed-form-opportunities-block-2 [id^='edit-submit-opportunities']:hover,
+#views-exposed-form-my-opportunities-block-1 #edit-submit-my-opportunities:hover {
+  background: #4fae3e;
+}
+.block-views-blockopportunities-block-1 .views-field-field-opporunity-drd-link .dropbutton-wrapper,
+.block-views-blockopportunities-block-2 .views-field-field-opporunity-drd-link .dropbutton-wrapper,
+.views-exposed-form-my-opportunities-block-1 .views-field-field-opporunity-drd-link .dropbutton-wrapper,
+.block-views-blockopportunities-block-1 .views-field-dropbutton .dropbutton-wrapper,
+.block-views-blockopportunities-block-2 .views-field-dropbutton .dropbutton-wrapper,
+.views-exposed-form-my-opportunities-block-1 .views-field-dropbutton .dropbutton-wrapper {
+  display: inline-block;
+  padding-right: 6.3em;
+  margin-right: 0;
+}
+.block-views-blockopportunities-block-1 .views-field-dropbutton .dropbutton-widget,
+.block-views-blockopportunities-block-2 .views-field-dropbutton .dropbutton-widget,
+.views-exposed-form-my-opportunities-block-1 .views-field-dropbutton .dropbutton-widget {
+  margin-top: 2px;
+}
+.block-views-blockopportunities-block-1 .drd-link,
+.block-views-blockopportunities-block-2 .drd-link,
+.views-exposed-form-my-opportunities-block-1 .drd-link {
+  display: inline-block;
+}
+.block-views-blockopportunities-block-1 .drd-link a,
+.block-views-blockopportunities-block-2 .drd-link a,
+.views-exposed-form-my-opportunities-block-1 .drd-link a {
+  height: 33px;
+  line-height: 33px;
+  padding: 0 37.5px;
+}
+.paragraph--type--document-link > div.uk-margin {
+  margin: 0 !important;
+}
+#views-exposed-form-opportunities-block-1 [id*="edit-uid-current--"] {
+  margin: 10px 0;
+  padding: 0;
+  border: none;
+  display: block;
+}
+#views-exposed-form-opportunities-block-1 [id*="edit-uid-current--"] input {
+  height: 16px !important;
+}
+
+/** Users **/
+#views-exposed-form-users-page-1 {
+  margin-bottom: 1.5em;
+  padding: 1em 1.5em 1.5em;
+  background: #efefef;
+}
+#views-exposed-form-users-page-1 .form-item {
+  display: inline-block;
+}
+#views-exposed-form-users-page-1 .form-item input {
+  height: 33px;
+}
+#views-exposed-form-users-page-1 .form-item .uk-select:not([multiple]):not([size]) {
+  height: 33px;
+}
+#views-exposed-form-users-page-1 .form-actions {
+  display: inline-block;
+  margin: 0;
+}
+#views-exposed-form-users-page-1 #edit-submit-users {
+  line-height: 33px;
+  background: #72bf44;
+  color: #ffffff;
+  font-weight: bolder;
+  border: none;
+  margin-left: 5px;
+}
+#views-exposed-form-users-page-1 #edit-submit-users:hover {
+  background: #4fae3e;
+}
+
+/* Dropdown select */
+.js .uk-table .dropbutton-wrapper .dropbutton-widget .dropbutton-action a,
+.js .uk-table .dropbutton-wrapper .dropbutton-widget .dropbutton-action input,
+.js .uk-table .dropbutton-wrapper .dropbutton-widget .dropbutton-action button {
+  padding: 8.5px 20px;
+  font-weight: bold;
+}
+
+
+.horizontal-tab-button .summary {
+  display: inline;
+}
+
+/* Alerts */
+.uk-alert {
+  font-size: larger;
+}
+.uk-alert em {
+  color: #ffffff;
+}
+.uk-alert-primary {
+  background: rgba(45, 45, 100, 0.1);
+  color: #2D2D64
+}
+.uk-alert-success {
+  background: #04BBEE;
+  color: #ffffff;
+}
+.uk-alert-warning {
+  background: #F07D23;
+  color: #ffffff;
+}
+.uk-alert-danger {
+  background: #E63264;
+  color: #ffffff;
+}
+
+/* Buttons */
+.uk-button-danger {
+  background-color: #F07D23;
+}
+
+.uk-button-danger:focus,.uk-button-danger:hover {
+  background-color: #EA5441
+}
+
+.uk-button-danger.uk-active,.uk-button-danger:active {
+  background-color: #EA5441
+}
+
+/** Add opportunity buttons */
+.block-block-content nav.action-links a {
+  margin: 5px 0;
+}
+
+/** Form validation / errors **/
+.error {
+  color: #f0506e;
+}
+.error > a {
+  color: #f0506e;
+}
+.error > a:after {
+  content: '*';
+  margin-left: 5px;
+}
+select.error,
+textarea.error,
+fieldset.error {
+  border-color: #f0506e;
+}
+fieldset.required.error,
+textarea.required.error {
+  border-color: #f0506e;
+}
+.form-type-checkbox label.error {
+  float: right;
+  width: 100%;
+}
+
+.layout-container > #drd-messages {
+  display: none;
+}
+
+
+body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
+  margin-left: 0;
+}
+
+body.user-login #page--content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 450px;
+  padding: 30px;
+  border: solid 1px #eeeeee;
+}
+
+/** Charts **/
+.chart_wrap {
+  border-color: #eeeeee;
+  padding-bottom: 50%;
+}
+.chart_wrap g text {
+  font-family: 'Roboto Condensed', sans-serif !important;
+  color: #666;
+}
+
+/* Dashboard */
+#views-exposed-form-oms-500-drd-results-block-1 {
+  margin-bottom: 1.5em;
+  padding: 1em 1.5em 1.5em;
+  background: #efefef;
+}
+#views-exposed-form-oms-500-drd-results-block-1 .form-item-field-opportunity-products-target-id {
+  margin-bottom: 10px;
+}
+#views-exposed-form-oms-500-drd-results-block-1 .form-item-created-min,
+#views-exposed-form-oms-500-drd-results-block-1 .form-item-created-max {
+  display: inline-block;
+}
+#views-exposed-form-oms-500-drd-results-block-1 .form-item-created-max {
+  margin-right: 7px;
+}
+#views-exposed-form-oms-500-drd-results-block-1 .form-item-created-min input,
+#views-exposed-form-oms-500-drd-results-block-1 .form-item-created-max input {
+  height: 33px;
+}
+#views-exposed-form-oms-500-drd-results-block-1 .form-actions {
+  /*display: inline-block;*/
+  margin-bottom: 0;
+}
+#views-exposed-form-oms-500-drd-results-block-1 .form-actions .form-submit {
+  line-height: 33px;
+}
+#views-exposed-form-oms-500-drd-results-block-1 .form-item-field-account-market-target-id {
+  display: block;
+}

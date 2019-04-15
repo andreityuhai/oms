@@ -1,0 +1,33 @@
+/* CSS reset/normalize plus HTML element styling. */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,400i,700');
+
+html {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+}
+#page-wrapper {
+  background: #eeeeee;
+}
+#page {
+  min-height: calc(100vh - 140px);
+}
+body.adminimal-admin-toolbar.toolbar-vertical #page,
+body.adminimal-admin-toolbar.toolbar-horizontal #page {
+  min-height: calc(100vh - 180px);
+}
+body.adminimal-admin-toolbar.toolbar-horizontal.toolbar-tray-open #page {
+  min-height: calc(100vh - 220px);
+}
+#page {
+  margin-top: 0 !important;
+  margin-bottom: 0;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background: #ffffff;
+}
+#page--content {
+
+}
+.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, h1, h2, h3, h4, h5, h6, label {
+  font-family: 'Roboto Condensed', sans-serif;
+}

@@ -1,0 +1,31 @@
+name: DRD
+type: theme
+description: 'UIkit Sub-theme'
+core: 8.x
+base theme: uikit
+
+regions:
+  navbar: 'Navigation Bar'
+  offcanvas: 'Offcanvas Navigation'
+  content: Content
+  sidebar_first: 'Left Sidebar'
+  sidebar_second: 'Right Sidebar'
+  footer: 'Footer'
+
+libraries:
+  - drd/global-style
+libraries-override:
+  uikit/uikit:
+    css:
+      base:
+        //cdnjs.cloudflare.com/ajax/libs/uikit/3.0.1/css/uikit.min.css: false
+  uikit/global-style:
+    css:
+      base:
+        css/uikit.base.css: false
+      layout:
+        css/uikit.layout.css: false
+      component:
+        css/uikit.component.css: false
+      theme:
+        css/uikit.theme.css: false

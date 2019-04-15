@@ -1,0 +1,29 @@
+name: oms
+recipe: drupal8
+config:
+  webroot: web
+  xdebug: true
+proxy:
+  pma:
+  - pma.oms.lndo.site
+services:
+  node:
+    type: node
+    globals:
+      gulp-cli: latest
+    overrides:
+      ports:
+        - 3000:3000
+  pma:
+    type: phpmyadmin
+    hosts:
+    - database
+tooling:
+  npm:
+    service: node
+  node:
+    service: node
+  gulp:
+    service: node
+  yarn:
+    service: node

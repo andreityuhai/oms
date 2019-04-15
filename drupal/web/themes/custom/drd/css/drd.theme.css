@@ -1,0 +1,12 @@
+/* Purely visual styling (“look-and-feel”) for a component. */
+.webform-term-checkboxes-scroll .fieldset-wrapper {
+  border: none;
+}
+
+.uk-link, a {
+  color: #72bf44;
+}
+
+.uk-link:hover, a:hover {
+  color: #4fae3e;
+}

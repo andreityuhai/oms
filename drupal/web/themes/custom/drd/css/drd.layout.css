@@ -1,0 +1,4 @@
+/* Macro arrangement of a web page, including any grid systems. */
+.layout--twocol > .layout__region {
+  max-width: 100%;
+}

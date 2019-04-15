@@ -1,0 +1,15 @@
+global-style:
+  version: VERSION
+  css:
+    base:
+      css/site.css: {}
+      css/drd.base.css: {}
+    layout:
+      css/drd.layout.css: {}
+    component:
+      css/drd.component.css: {}
+    theme:
+      css/drd.theme.css: {}
+      css/uikit.dropbutton.css: {}
+  js:
+    js/drd.theme.js: {}
