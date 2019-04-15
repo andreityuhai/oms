@@ -1,0 +1,6 @@
+name: OMS Dashboard
+description: Provides customizable per-user dashboard page with an option to manage widgets on the page.
+package: OMS
+
+type: module
+core: 8.x
