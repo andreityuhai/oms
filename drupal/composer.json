@@ -43,6 +43,7 @@
         "drupal/charts": "^3.0@beta",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.6.0",
+        "drupal/examples": "1.x-dev",
         "drupal/module_filter": "^3.1",
         "drupal/uikit": "^3.7",
         "drupal/uikit_components": "3.x-dev",

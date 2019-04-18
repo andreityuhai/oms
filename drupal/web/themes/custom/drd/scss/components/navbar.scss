@@ -15,10 +15,22 @@ $navbar-nav-item-font-size: 15px;
   padding-right: 40px;
 }
 
-#drd-main-menu,
-.uk-navbar-right {
+#drd-main-menu  {
   margin-top: 40px;
   border-top: 3px solid $green;
+  position: unset;
+
+  &:after {
+    width: calc(100% - 264px);
+    position: absolute;
+    top: 52px;
+    content: '';
+    border-top: solid 3px $green;
+  }
+}
+
+.uk-navbar-right {
+  margin-top: 40px;
 }
 
 /*

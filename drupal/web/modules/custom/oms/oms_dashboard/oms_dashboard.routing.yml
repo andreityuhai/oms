@@ -1,0 +1,7 @@
+example.content:
+  path: '/dashboard'
+  defaults:
+    _controller: '\Drupal\oms_dashboard\Controller\DashboardController::content'
+    _title: 'Dashboard'
+  requirements:
+    _permission: 'access content'
