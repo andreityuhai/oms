@@ -5,6 +5,14 @@ $navbar-nav-item-active-color: $green;
 $navbar-nav-item-hover-color: $dark-grey;
 $navbar-nav-item-font-size: 15px;
 
+#page--header:after {
+  width: 50%;
+  left: 50%;
+  position: absolute;
+  top: 52px;
+  content: '';
+  border-top: solid 3px $green;
+}
 
 .uk-navbar-container {
   box-sizing: content-box;

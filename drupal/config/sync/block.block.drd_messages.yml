@@ -1,0 +1,22 @@
+uuid: 966cbd12-6acd-4eab-9712-0dd7a834db5c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drd
+_core:
+  default_config_hash: C2zFGWUGGFsmn_OpTwfbeeviLPNcn_CoJ7bO23exXJw
+id: drd_messages
+theme: drd
+region: content
+weight: -2
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 4a192aef-51e0-43b8-b044-1a6dd6f73f93
+langcode: en
+status: true
+dependencies:
+  theme:
+    - uikit
+_core:
+  default_config_hash: ym1YJCNw2ow6Cdhuq14idQe1ayfyANpjyvQJF5BEMs4
+id: uikit_page_title
+theme: uikit
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

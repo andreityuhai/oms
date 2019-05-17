@@ -1,0 +1,22 @@
+uuid: 17cd386f-ced4-461c-9fa9-4f9d95073ccf
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drd
+_core:
+  default_config_hash: z4ShKR-7kKrTRnc9_HXyfnncaSxhHmzvqINIKiNovwE
+id: drd_content
+theme: drd
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

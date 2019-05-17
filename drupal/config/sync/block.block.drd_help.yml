@@ -1,0 +1,22 @@
+uuid: 3b0e3475-cd9d-44f2-a455-c54d7f8882ff
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - drd
+_core:
+  default_config_hash: J8R20GmVDFYi32VwW88t09RxuKLOc2o4Jrx5ozyW8ZA
+id: drd_help
+theme: drd
+region: content
+weight: -1
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

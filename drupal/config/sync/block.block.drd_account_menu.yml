@@ -1,0 +1,31 @@
+uuid: e7a61e03-e227-4b32-8057-99ca0aa61c16
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+    - uikit_components
+  theme:
+    - drd
+third_party_settings:
+  uikit_components:
+    uikit_navbar_alignment: right
+_core:
+  default_config_hash: NyMTY58dAJmK365kGwvoFZ1xNfRX5WwFzONewfusops
+id: drd_account_menu
+theme: drd
+region: navbar
+weight: -3
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

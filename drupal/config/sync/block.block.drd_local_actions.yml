@@ -1,0 +1,20 @@
+uuid: 92d5cacd-2a37-4961-b10a-ea46b95479f4
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drd
+_core:
+  default_config_hash: m0hpNqcWSQdsLsYXkGPNMms7hRMMHtu6-qkfmt9Cf6w
+id: drd_local_actions
+theme: drd
+region: content
+weight: -3
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

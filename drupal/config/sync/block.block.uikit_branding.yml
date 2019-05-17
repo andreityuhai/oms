@@ -1,0 +1,25 @@
+uuid: 0ad669b7-3587-4534-a397-af17d3c924f2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - uikit
+_core:
+  default_config_hash: A3b-ddKMjTWsrOZHEINw7QtKxVfYJGyhvT06E1Osm1w
+id: uikit_branding
+theme: uikit
+region: navbar
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 33e276ed-c700-4670-ba62-3cea7df78d08
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drd
+_core:
+  default_config_hash: hT1wmJSqknfT0p0CKZY8G_EkQegI4b8DTEd9yJY-Zj4
+id: drd_page_title
+theme: drd
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

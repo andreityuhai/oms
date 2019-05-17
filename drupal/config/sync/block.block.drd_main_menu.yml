@@ -1,0 +1,31 @@
+uuid: e7956e5d-058e-4deb-8ebb-79825873f666
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+    - uikit_components
+  theme:
+    - drd
+third_party_settings:
+  uikit_components:
+    uikit_navbar_alignment: left
+_core:
+  default_config_hash: ejxG8atCHSGpmMHGIhUFNem1Vzp1db2aGqmuqze2vK4
+id: drd_main_menu
+theme: drd
+region: navbar
+weight: -5
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

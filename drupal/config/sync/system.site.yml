@@ -1,0 +1,14 @@
+uuid: bfdb4145-3255-4026-a3d6-f62915278dcf
+name: 'OMS Dashboard'
+mail: atyuhai@krengeltech.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /dashboard
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
